@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'MTSSans-Black';
+  font-weight: 900;
+  font-style: normal;
+  src: url("../fonts/MTSSans-Black.woff2") format("woff2"), url("../fonts/MTSSans-Black.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MTSSans-Bold';
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/MTSSans-bold.woff2") format("woff2"), url("../fonts/MTSSans-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MTSSans-Medium';
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/MTSSans-medium.woff2") format("woff2"), url("../fonts/MTSSans-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'MTSSans-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/MTSSans-regular.woff2") format("woff2"), url("../fonts/MTSSans-regular.woff") format("woff");
+}
+/*# sourceMappingURL=fonts.css.map */

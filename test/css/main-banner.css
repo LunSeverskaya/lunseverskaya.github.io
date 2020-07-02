@@ -1,0 +1,121 @@
+.main-banner {
+  background-color: #F2F3F7;
+  padding: 14px 16px 0 14px;
+}
+
+.main-banner__title {
+  font-size: 32px;
+  font-family: "MTSSans-Bold", "Arial", sans-serif;
+  font-weight: bold;
+  line-height: 40px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #001424;
+  text-transform: uppercase;
+}
+
+.main-banner__text {
+  font-family: "MTSSans-Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 19px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.main-banner__button {
+  border: none;
+  background-color: #DD0000;
+  color: #fff;
+  font-family: "MTSSans-Medium", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  width: 220px;
+  height: 36px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.main-banner__button:hover {
+  background-color: #C90000;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+.main-banner__bg-img {
+  width: 100%;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+
+@media (min-width: 768px) {
+  .main-banner {
+    background-image: url("../img/bg-tablet.png");
+    background-repeat: no-repeat;
+    background-position: 94% 20px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 0;
+  }
+  .main-banner__text-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .main-banner__text {
+    font-size: 20px;
+    line-height: 24px;
+    margin-top: 58px;
+    margin-bottom: 20px;
+  }
+  .main-banner__title {
+    font-size: 48px;
+    line-height: 52px;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+  .main-banner__bg-img {
+    display: none;
+  }
+  .main-banner__button {
+    margin-bottom: 90px;
+    height: 48px;
+    width: 284px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-banner {
+    background-position: 91% 20px;
+    padding-left: 84px;
+    padding-right: 105px;
+  }
+  .main-banner__text {
+    margin-top: 60px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .main-banner__title {
+    font-size: 50px;
+    line-height: 55px;
+    margin-bottom: 35px;
+  }
+  .main-banner__button {
+    width: 299px;
+    height: 48px;
+    font-size: 20px;
+    margin-bottom: 63px;
+  }
+}
+/*# sourceMappingURL=main-banner.css.map */

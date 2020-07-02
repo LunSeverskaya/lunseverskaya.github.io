@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/owl-dots.scss"
+    ],
+    "names": [],
+    "file": "owl-dots.css"
+}

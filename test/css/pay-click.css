@@ -1,0 +1,133 @@
+.pay-click__head {
+  font-family: "MTSSans-Bold", "Arial", sans-serif;
+  color: #001424;
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.pay-click__head br {
+  display: none;
+}
+
+.pay-click__item {
+  margin-bottom: 25px;
+  padding-left: 54px;
+  padding-right: 16px;
+  position: relative;
+}
+
+.pay-click__description {
+  color: #001424;
+  font-family: "MTSSans-Regular", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.pay-click__img {
+  position: absolute;
+  left: 20px;
+  top: 0;
+}
+
+.pay-click__btn {
+  margin-top: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.pay-click__btn button {
+  background-color: #DD0000;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  width: 220px;
+  height: 36px;
+  border: none;
+}
+
+.pay-click__btn button:hover {
+  background: #C90000;
+  transition: 200ms;
+  -webkit-transition: 200ms;
+  -moz-transition: 200ms;
+  -ms-transition: 200ms;
+  -o-transition: 200ms;
+}
+
+@media (min-width: 768px) {
+  .pay-click__head {
+    text-align: center;
+    margin-top: 80px;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .pay-click__head br {
+    display: block;
+  }
+  .pay-click__item {
+    padding-left: 68px;
+    max-width: 550px;
+  }
+  .pay-click__img {
+    left: 32px;
+  }
+  .pay-click__btn {
+    text-align: left;
+    margin-left: 68px;
+  }
+  .pay-click__btn button {
+    width: 284px;
+    height: 48px;
+    font-size: 21px;
+  }
+}
+
+@media (min-width: 838px) {
+  .pay-click {
+    background-image: url("../img/background-pay.png");
+    background-repeat: no-repeat;
+    background-position: 94% 92px;
+  }
+}
+
+@media (min-width: 990px) {
+  .pay-click {
+    background-image: url("../img/background-pay-desktop.png");
+    background-repeat: no-repeat;
+    background-position: 94% 92px;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .pay-click {
+    background-size: 41%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .pay-click {
+    background-position: 89% 54px;
+  }
+  .pay-click__item {
+    padding-left: 120px;
+    max-width: 673px;
+  }
+  .pay-click__img {
+    left: 84px;
+  }
+  .pay-click__btn {
+    margin-left: 120px;
+  }
+  .pay-click__head {
+    margin-bottom: 62px;
+  }
+}
+/*# sourceMappingURL=pay-click.css.map */

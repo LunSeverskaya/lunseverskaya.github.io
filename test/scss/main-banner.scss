@@ -1,0 +1,123 @@
+@import 'vars';
+.main-banner {
+    background-color: #F2F3F7;
+    padding: 14px 16px 0 14px;
+
+    &__title {
+        font-size: 32px;
+        font-family: $bold;
+        font-weight: bold;
+        line-height: 40px;
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: $head-text;
+        text-transform: uppercase;
+    }
+
+    &__text {
+        font-family: $medium;
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    &__button {
+        border: none;
+        background-color: $button;
+        color: #fff;
+        font-family: $medium;
+        font-size: 16px;
+        line-height: 22px;
+        width: 220px;
+        height: 36px;
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        margin-bottom: 20px;
+        &:hover {
+            background-color: #C90000;
+            transition: 200ms;
+            -webkit-transition: 200ms;
+            -moz-transition: 200ms;
+            -ms-transition: 200ms;
+            -o-transition: 200ms;
+}
+    }
+
+    &__bg-img {
+        width: 100%;
+        padding-left: 31px;
+        padding-right: 31px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .main-banner {
+        background-image: url("../img/bg-tablet.png");
+        background-repeat: no-repeat;
+        background-position: 94% 20px;
+        padding-left: 32px;
+        padding-right: 32px;
+        padding-top: 0;
+        &__text-block {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__text {
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 58px;
+            margin-bottom: 20px;
+        }
+
+        &__title {
+            font-size: 48px;
+            line-height: 52px;
+            margin-bottom: 32px;
+            margin-top: 0;
+        }
+
+        &__bg-img {
+            display: none;
+        }
+
+        &__button {
+            margin-bottom: 90px;
+            height: 48px;
+            width: 284px;
+            font-size: 21px;
+        }
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .main-banner {
+        background-position: 91% 20px;
+        padding-left: 84px;
+        padding-right: 105px;
+        &__text {
+            margin-top: 60px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        &__title {
+            font-size: 50px;
+            line-height: 55px;
+            margin-bottom: 35px;
+        }
+
+        &__button {
+            width: 299px;
+            height: 48px;
+            font-size: 20px;
+            margin-bottom: 63px;
+        }
+    }
+}

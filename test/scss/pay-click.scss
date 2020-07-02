@@ -1,0 +1,146 @@
+@import 'vars';
+.pay-click {
+    &__head {
+        font-family: $bold;
+        color: $head-text;
+        font-size: 24px;
+        line-height: 32px;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        padding-right: 16px;
+        padding-left: 16px;
+        br {
+            display: none;
+        }
+    }
+
+    &__item {
+        margin-bottom: 25px;
+
+        padding-left: 54px;
+        padding-right: 16px;
+
+        position: relative;
+
+    }
+
+    &__description {
+
+        color: $head-text;
+        font-family: $regular;
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    &__img {
+        position: absolute;
+        left: 20px;
+        top: 0;
+    }
+
+    &__btn {
+        margin-top: 30px;
+        margin-bottom: 60px;
+        text-align: center;
+        button {
+            background-color: $button;
+            border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+            -o-border-radius: 5px;
+            color: #fff;
+            font-size: 16px;
+            width: 220px;
+            height: 36px;
+            border: none;
+            &:hover {
+                background: #C90000;
+                transition: 200ms;
+                -webkit-transition: 200ms;
+                -moz-transition: 200ms;
+                -ms-transition: 200ms;
+                -o-transition: 200ms;
+}
+        }
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .pay-click {
+        &__head {
+            text-align: center;
+            margin-top: 80px;
+            font-size: 32px;
+            line-height: 40px;
+            br {
+                display: block;
+            }
+        }
+
+        &__item {
+            padding-left: 68px;
+            max-width: 550px;
+        }
+
+        &__img {
+            left: 32px;
+        }
+
+        &__btn {
+            text-align: left;
+            margin-left: 68px;
+            button {
+                width: 284px;
+                height: 48px;
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+@media (min-width: 838px) {
+    .pay-click {
+        background-image: url("../img/background-pay.png");
+        background-repeat: no-repeat;
+        background-position: 94% 92px;
+    }
+}
+
+@media (min-width: 990px) {
+    .pay-click {
+        background-image: url("../img/background-pay-desktop.png");
+        background-repeat: no-repeat;
+        background-position: 94% 92px;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+    .pay-click {
+           background-size: 41%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .pay-click {
+        background-position: 89% 54px;
+        &__item {
+            padding-left: 120px;
+            max-width: 673px;
+        }
+
+        &__img {
+            left: 84px;
+        }
+
+        &__btn {
+            margin-left: 120px;
+        }
+
+        &__head {
+            margin-bottom: 62px;
+        }
+    }
+}

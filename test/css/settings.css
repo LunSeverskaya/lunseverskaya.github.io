@@ -1,0 +1,44 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ol li,
+ul li {
+  list-style-type: none;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+body.lock {
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+}
+
+@media (min-width: 1170px) {
+  .container {
+    min-width: 1170px;
+    margin: 0 auto;
+  }
+}
+/*# sourceMappingURL=settings.css.map */

@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ol,
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+        list-style-type: none;
+    }
+}
+
+body {
+    min-width: 320px;
+    overflow-x: hidden;
+    margin: 0;
+    &.lock {
+        overflow: hidden;
+    }
+}
+
+.container {
+    min-width: 320px;
+}
+
+
+@media (min-width: 1170px) {
+    .container {
+        min-width: 1170px;
+        margin: 0 auto;
+    }
+}
+
