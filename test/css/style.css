@@ -862,8 +862,8 @@ body.lock {
   .main-slider .owl-carousel__btn-more {
     width: 100%;
     left: 0;
-    padding-left: 32px;
-    padding-right: 32px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
   .main-slider .owl-carousel__btn-more button {
     width: 100%;
