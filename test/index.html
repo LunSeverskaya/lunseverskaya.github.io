@@ -1,342 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>test</title>
-        <link rel="stylesheet" href="css/style.css">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-      
-    </head>
-    <body>
-        <header class="header">
-            <div class="container">
-                <div class="header__body">
-                    <a href="#" class="header__logo">
-                        <img src="img/logo.svg" alt="">
-                    </a>
-                    <div class="header__profile">
-                        <a class="header__link" href="#">
-                            <img src="img/profile.svg" alt="">
-                        </a>
-                        <a class="header__link" href="#">Личный кабинет</a>
-                    </div>
-                    <div class="header__burger">
-                        <span></span>
-                    </div>
-                    <nav class="header__menu">
-                        <ul class="header__list">
-                            <li>
-                                <a href="#" class="header__link _active">Бизнес маркет</a>
-                            </li>
-                            <li>
-                                <a href="#" class="header__link">Онлайн Сервисы
-                                </a>
-                            </li>
-                            <ul class="header__dop-list">
-                                <li>
-                                    <a href="#" class="header__link _dop-link">Москва</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="header__link _dop-link">Обратная связь</a>
-                                </li>
-                            </ul>
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="container">
-            <section class="main-banner">
-                <div class="main-banner__text-block">
-                    <h1 class="main-banner__title">
-                        Цифровые решения
-                        <br>
-                        для вашего бизнеса
-                    </h1>
-                    <p class="main-banner__text">
-                        Покупайте бизнес сервисы онлайн,
-                        <br>
-                        оплатив с мобильного счета вашей организации
-                    </p>
-                </div>
-                <button class="main-banner__button scrollto" href="#main-slider">
-                    Смотреть все сервисы
-                </button>
-                <img src="img/background-mobile.png" alt="" class="main-banner__bg-img">
-            </section>
-            <section class="main-slider" id="main-slider">
-                <h2 class="main-slider__item">Какую задачу вы решаете?</h2>
-                <div class="main-slider__buttons">
-                    <a href="#zero" class="main-slider__btn" autofocus>Реклама и продвижение</a>
-                    <a href="#second" class="main-slider__btn">Автоматизация процессов</a>
-                    <a href="#third" class="main-slider__btn">IT и безопасность</a>
-                    <a href="#second" class="main-slider__btn">Работа с клиентской базой</a>
-                </div>
-                <div class="owl-carousel">
-                    <div class="owl-carousel__item" data-hash="zero">
-                        <img src="img/mts logo.svg" alt="" class="owl-carousel__logo">
-                        <h3 class="owl-carousel__title">Голосовой
-                            <br>
-                            робот</h3>
-                        <p class="owl-carousel__description">Облачная платформа
-                            <br>
-                            голосового робота
-                            <br>
-                            для совершения
-                            <br>
-                            автоматических звонков
-                            <br>
-                            по готовым сценариям</p>
-                        <div class="owl-carousel__dop-info">
-                            <span class="number number_first">10</span>
-                            <span>звонков
-                                <br>
-                                бесплатно</span>
-                        </div>
-                        <div class="owl-carousel__btn-more">
-                            <button>Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="owl-carousel__item" data-hash="first">
-                        <img src="img/mts logo.svg" alt="" class="owl-carousel__logo">
-                        <h3 class="owl-carousel__title">Мтс
-                            <br>
-                            коммуникатор</h3>
-                        <p class="owl-carousel__description">Услуга для корпоративных
-                            <br>
-                            клиентов МТС, позволяющая
-                            <br>
-                            организовать простой
-                            <br>
-                            способ общения
-                            <br>
-                            с клиентами</p>
-                        <div class="owl-carousel__dop-info">
-                            <span>от
-                                <span class="number">3 180</span>
-                                ₽/мес</span>
-                        </div>
-                        <div class="owl-carousel__btn-more">
-                            <button>Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="owl-carousel__item" data-hash="second">
-                        <img src="img/mts logo.svg" alt="" class="owl-carousel__logo">
-                        <h3 class="owl-carousel__title">Цифровой
-                            <br>
-                            ассистент
-                        </h3>
-                        <p class="owl-carousel__description">Наймите электронного
-                            <br>
-                            сотрудника для общения
-                            <br>
-                            с клиентами. Готовые
-                            <br>
-                            решения для корпоративных
-                            <br>
-                            клиентов МТС</p>
-                        <div class="owl-carousel__btn-more">
-                            <button>Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="owl-carousel__item" data-hash="third">
-                        <img src="img/push.svg" alt="" class="owl-carousel__logo">
-                        <h3 class="owl-carousel__title">Push for site</h3>
-                        <p class="owl-carousel__description">Все, что нужно, чтобы лучше
-                            <br>
-                            общаться с посетителями
-                            <br>
-                            сайта и превращать
-                            <br>
-                            их в покупателей.</p>
-                        <div class="owl-carousel__dop-info">
-                            <span>от
-                                <span class="number">1592</span>
-                                ₽</span>
-                        </div>
-                        <div class="owl-carousel__btn-more">
-                            <button>Подробнее</button>
-                        </div>
-                    </div>
-                    <div class="owl-carousel__item" data-hash="fourth">
-                        <img src="img/mts logo.svg" alt="" class="owl-carousel__logo">
-                        <h3 class="owl-carousel__title">Голосовой
-                            <br>
-                            робот</h3>
-                        <p class="owl-carousel__description">Облачная платформа
-                            <br>
-                            голосового робота
-                            <br>
-                            для совершения
-                            <br>
-                            автоматических звонков
-                            <br>
-                            по готовым сценариям</p>
-                        <div class="owl-carousel__btn-more">
-                            <button>Подробнее</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="popular-services">
-                <h2 class="popular-services__head">Популярные сервисы</h2>
-                <div class="group">
-                    <div class="popular-services__item">
-                        <h3 class="popular-services__title">МТС
-                            <br>
-                            Маркетолог</h3>
-                        <p class="popular-services__description">Используйте различные каналы
-                            коммуникации: SMS, ,E-mail, Viber, Баннеры, Социальные сети</p>
-                        <div class="popular-services__img"><img src="img/services-1.svg" alt=""></div>
-                    </div>
-                    <div class="popular-services__item">
-                        <h3 class="popular-services__title">Бесплатный вызов 8800</h3>
-                        <p class="popular-services__description">У надежного бизнеса всегда есть номер 8800</p>
-                        <div class="popular-services__img"><img src="img/services-2.svg" alt=""></div>
-                    </div>
-                </div>
-                <div class="group">
-                    <div class="popular-services__item">
-                        <h3 class="popular-services__title">#CloudMTS</h3>
-                        <p class="popular-services__description">Экосистема облачных сервисов для крупного бизнеса и корпораций</p>
-                        <div class="popular-services__img"><img src="img/services-3.svg" alt=""></div>
-                    </div>
-                    <div class="popular-services__item">
-                        <h3 class="popular-services__title">Виртуальная АТС
-                        </h3>
-                        <p class="popular-services__description">Простой способ телефонизации офиса без дополнительных затрат</p>
-                        <div class="popular-services__img"><img src="img/services-4.svg" alt=""></div>
-                    </div>
-                </div>
-            </section>
-            <section class="pay-click">
-                <h3 class="pay-click__head">
-                    Покупка с корпоративного
-                    <br>
-                    счета в пару кликов
-                </h3>
-                <div class="pay-click__item">
-                    <img class="pay-click__img" src="img/pay1.svg" alt="">
-                    <p class="pay-click__description">
-                        В Бизнес маркете вы можете купить полезные сервисы для бизнеса онлайн
-                    </p>
-                </div>
-                <div class="pay-click__item">
-                    <img class="pay-click__img" src="img/pay2.svg" alt="">
-                    <p class="pay-click__description">
-                        Оплата с вашего корпоративного мобильного счета</p>
-                </div>
-                <div class="pay-click__item">
-                    <img class="pay-click__img" src="img/pay3.svg" alt="">
-                    <p class="pay-click__description">
-                        Счет за услуги в привычном формате</p>
-                </div>
-                <div class="pay-click__item">
-                    <img class="pay-click__img" src="img/pay4.svg" alt="">
-                    <p class="pay-click__description">
-                        Покупка и доступ к услугам в режиме онлайн</p>
-                </div>
-                <div class="pay-click__item">
-                    <img class="pay-click__img" src="img/pay5.svg" alt="">
-                    <p class="pay-click__description">
-                        Просто выберите номер корпоративный мобильный номер, с которого вы хотите
-                        оплатить бизнес услугу. Онлайн сервисы предоставляются сразу же после оплаты.</p>
-                </div>
-                <div class="pay-click__btn">
-                    <button class="scrollto" href="#main-slider">Смотреть все сервисы</button>
-                </div>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-header">
-                <h5 class="footer-header__title">
-                    Бизнес маркет
-                </h5>
-                <p class="footer-header__description">
-                    Покупайте бизнес сервисы онлайн, оплатив  <br> с мобильного счета вашей организации
-                </p>
-            </div>
-            <div class="footer-lists">
-                <div class="footer-lists__item">
-                    <p class="footer-lists__head footer-lists__head_mobile">Помощь <img class="bottom" src="img/bottom.svg" alt=""></p>
-                    <p class="footer-lists__head footer-lists__head_desktop">Поддержка </p>
-                    <ul class="footer-list">
-                        <li><a class="footer-list__link" href="#">Обратная связь</a></li>
-                        <li><a class="footer-list__link" href="#">Контакты</a></li>   
-                        <li><a class="footer-list__link" href="#">Политика обработки <br> cookie</a></li>
-                        <li><a class="footer-list__link" href="#">Перейти на сайт mts.ru</a></li>
-                    </ul>
-                </div>
-                <div class="footer-lists__item">
-                    <p class="footer-lists__head">Реклама и продвижение <img class="bottom"  src="img/bottom.svg" alt=""></p>
-                    <ul class="footer-list">
-                        <li><a class="footer-list__link" href="#">МТС коммуникатор</a></li>
-                        <li><a class="footer-list__link" href="#">Цифровой ассистент  </a></li>   
-                        <li><a class="footer-list__link" href="#">Голосовой робот</a></li>
-                        <li><a class="footer-list__link" href="#">Push for site</a></li>
-                        <li><a class="footer-list__link" href="#">Анализ геоданных</a></li>
-                        <li><a class="footer-list__link" href="#">TVBit</a></li>
-                        
-                    </ul>
-                </div>
-                <div class="footer-lists__item">
-                    <p class="footer-lists__head">Автоматизация процессов <img class="bottom"  src="img/bottom.svg" alt=""></p>
-                    <ul class="footer-list">
-                        <li><a class="footer-list__link" href="#">Проверка контрагентов</a></li>
-                        <li><a class="footer-list__link" href="#">Конструктор документов  </a></li>   
-                        <li><a class="footer-list__link" href="#">CRM Простой бизнес</a></li>
-                        <li><a class="footer-list__link" href="#">Анализ геоданных</a></li>
-                        <li><a class="footer-list__link" href="#">Видеонаблюдение (Larga)</a></li>
-                        <li><a class="footer-list__link" href="#">Мобильные сотрудники</a></li>
-                        <li><a class="footer-list__link" href="#">Virtual POS</a></li>
-                    </ul>
-                </div>
-                <div class="footer-lists__item">
-                    <p class="footer-lists__head">IT и безопасность <img class="bottom"  src="img/bottom.svg" alt=""></p>
-                    <ul class="footer-list">
-                        <li><a class="footer-list__link" href="#">Антивирус Касперского</a></li>
-                        <li><a class="footer-list__link" href="#">Антивирус eset </a></li>   
-                        <li><a class="footer-list__link" href="#">Aнтивирус doctorweb</a></li>
-                        <li><a class="footer-list__link" href="#">MDM</a></li>
-                        <li><a class="footer-list__link" href="#">Видеонаблюдение</a></li>
-                        <li><a class="footer-list__link" href="#">Мобильные сотрудники</a></li>
-                        <li><a class="footer-list__link" href="#">Виртуальный сервер </a></li>
-                    </ul>
-                </div>
-                <div class="footer-lists__item">
-                    <p class="footer-lists__head footer-lists__head_mobile">Работа с клиентской базой <img class="bottom"  src="img/bottom.svg" alt=""></p>
-                    <p class="footer-lists__head footer-lists__head_desktop">Работа с клиентами </p>
-                    <ul class="footer-list">
-                        <li><a class="footer-list__link" href="#">Голосовой робот</a></li>
-                        <li><a class="footer-list__link" href="#">Цифровой ассистент </a></li>   
-                        <li><a class="footer-list__link" href="#">CRM простой бизнес</a></li>
-                        <li><a class="footer-list__link" href="#">МТС коммуникатор</a></li>
-                        <li><a class="footer-list__link" href="#">Видеонаблюдение</a></li>
-                        <li><a  class="footer-list__link" href="#">Виртуальный сервер </a></li>
-                        
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-protected">
-                <p>© 2019 ПАО «МТС». Все права защищены.</p>
-            </div>
-        </div>
-    </footer>
-    <script
-        src="https://code.jquery.com/jquery-3.5.1.min.js"
-        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-        crossorigin="anonymous"></script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <script src="js/script.js"></script>
-</body>
-</html>
+<div class="banner">
+    <div class="bestsellers-suumer"><span>Bestsellers</span><div class="obertka"></div></div>
+</div>
+<style>
+.vueperslide .vueperslide__content {
+width: 100% !important}
+
+    .bestsellers-suumer span {
+        font-family: Gothic119;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 80px;
+        line-height: 126%;
+ 
+        letter-spacing: -0.02em;
+        text-transform: uppercase;
+        color: #000000;
+        margin-top: 25px;
+        margin-bottom: 0;
+  
+          margin-top: 22px;
+    display: block;
+        text-align: right;
+
+    }
+
+    @media (min-width: 1925px) {
+        .bestsellers-suumer span {
+            font-size: 88px;
+            margin-left: -27%;
+        }
+    }
+
+    @media (max-width: 1440px) {
+        .bestsellers-suumer span {
+            font-size: 60px;
+            margin-left: -25%;
+        }
+    }
+
+    @media (max-width: 1024px) {
+        .bestsellers-suumer span {
+            font-size: 48px;
+            margin-left: -25%;
+        }
+    }
+    
+    
+    @media (max-width: 768px) {
+        .bestsellers-suumer span {
+            font-size: 48px;
+            margin-top: 2565px;
+            margin-left: 0;
+            text-align: center;
+        }
+    }
+    
+        @media (max-width: 414px) {
+        .bestsellers-suumer span {
+            font-size: 38px;
+            margin-top: 66px;
+            text-align: center;
+        }
+    }
+    
+        
+        @media (max-width: 375px) {
+        .bestsellers-suumer span {
+            font-size: 36px;
+            margin-top: 66px;
+            text-align: center;
+        }
+                    @media (max-width: 375px) {
+        .bestsellers-suumer span {
+            font-size: 36px;
+        }
+    }
+
+</style>

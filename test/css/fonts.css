@@ -1,28 +1,28 @@
 @font-face {
-  font-family: 'mtssansBlack';
+  font-family: 'MTSSans-Black';
   font-weight: 900;
   font-style: normal;
-  src: url("mtssansBlack.woff2") format("woff2"), url("mtssansblack.woff") format("woff");
+  src: url("../fonts/MTSSans-Black.woff2") format("woff2"), url("../fonts/MTSSans-Black.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'mtssansBold';
+  font-family: 'MTSSans-Bold';
   font-weight: 700;
   font-style: normal;
-  src: url("mtssansbold.woff2") format("woff2"), url("mtssansbold.woff") format("woff");
+  src: url("../fonts/MTSSans-bold.woff2") format("woff2"), url("../fonts/MTSSans-bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'mtssansMedium';
+  font-family: 'MTSSans-Medium';
   font-weight: 500;
   font-style: normal;
-  src: url("mtssansmedium.woff2") format("woff2"), url("mtssansmedium.woff") format("woff");
+  src: url("../fonts/MTSSans-medium.woff2") format("woff2"), url("../fonts/MTSSans-medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'mtssansRegular';
+  font-family: 'MTSSans-Regular';
   font-weight: 400;
   font-style: normal;
-  src: url("mtssansregular.woff2") format("woff2"), url("mtssansregular.woff") format("woff");
+  src: url("../fonts/MTSSans-regular.woff2") format("woff2"), url("../fonts/MTSSans-regular.woff") format("woff");
 }
 /*# sourceMappingURL=fonts.css.map */
