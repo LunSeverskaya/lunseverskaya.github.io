@@ -1,0 +1,13 @@
+$blue: #3D3BFF;
+$w: white;
+$r: 'Roboto', sans-serif;
+$os: 'Open Sans', sans-serif;
+$rs: 'Roboto Slab', sans-serif;
+
+@mixin auto {
+    margin: {
+     left: auto;
+     right: auto;
+    }
+}
+

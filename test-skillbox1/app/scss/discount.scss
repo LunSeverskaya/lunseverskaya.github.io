@@ -1,0 +1,74 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+
+.discount {
+    padding-top: 21px;
+    padding-bottom: 21px;
+    padding-left: 19px;
+    padding-right: 14px;
+    max-width: 110px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -20px;
+    @include auto;
+    background-image: url(../img/label.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+    @media (max-width: 992px) and (min-width: 770px) {
+        padding-top: 18px;
+        padding-bottom: 21px;
+        padding-left: 17px;
+        padding-right: 19px;
+    }
+    @media (max-width: 769px) {
+        padding-top: 21px;
+        padding-bottom: 23px;
+        padding-left: 18px;
+        padding-right: 18px;
+        top: -53px;
+    }
+    &__text {
+        font-family: $r;
+        display: block;
+        color: #fff;
+        font-size: 14px;
+        line-height: 16px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+        @media (max-width: 992px) and (min-width: 770px) {
+            font-size: 14px;
+            line-height: 16px;
+        }
+        &--procent {
+            font-weight: bold;
+            font-size: 30px;
+            line-height: 28px;
+            letter-spacing: -0.75px;
+            margin-bottom: 3px;
+            @media (max-width: 992px) and (min-width: 770px) {
+                font-size: 30px;
+                line-height: 28px;
+            }
+        }
+        &--criterion {
+            font-size: 15px;
+            line-height: 24px;
+            letter-spacing: -0.5px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            opacity: 0.7;
+            text-transform: lowercase;
+            margin-bottom: 0;
+            @media (max-width: 992px) and (min-width: 770px) {
+                font-size: 15px;
+                line-height: 24px;
+            }
+            @media (max-width: 769px) {
+                line-height: 15px;
+            }
+        }
+    }
+}

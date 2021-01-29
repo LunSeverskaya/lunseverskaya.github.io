@@ -1,0 +1,41 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+
+.course-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 44px;
+    @media (max-width: 769px) {
+        margin-bottom: 9px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    p {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+    &__text {
+        font-family: $r;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        letter-spacing: -0.5px;
+        color: #657195;
+        mix-blend-mode: normal;
+        white-space: pre;
+        &--blue {
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 23px;
+            color: $blue;
+            mix-blend-mode: normal;
+        }
+    }
+}
