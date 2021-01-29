@@ -1,0 +1,48 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+.page {
+    &__header {
+        h2 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: $r;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 34px;
+        line-height: 40px;
+        letter-spacing: -0.5px;
+        color: #000000;
+        margin-bottom: 24px;
+        br {
+            display: none;
+            @media (max-width: 769px) {
+                display: block;
+            }
+        }
+        @media (max-width: 992px) and (min-width: 770px) {
+            font-size: 38px;
+            line-height: 40px;
+            margin-bottom: 32px;
+            text-align: center;
+        }
+        @media (max-width: 769px)  {
+            font-size: 30px;
+            line-height: 36px;
+            margin-bottom: 19px;
+        }
+        }
+    }
+
+    &__description {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media (max-width: 992px) and (min-width: 770px) {
+            justify-content: center;
+        }
+        @media (max-width: 769px)  {
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+    }
+}

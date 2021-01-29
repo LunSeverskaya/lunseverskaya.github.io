@@ -1,0 +1,38 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+
+.header {
+    @include auto;
+    &__title {
+        font-family: $r;
+        font-weight: bold;
+        margin-top: 65.81px;
+        margin-bottom: 67.19px;
+        font-size: 55px;
+        line-height: 32px;
+        letter-spacing: -0.5px;
+        color: #000;
+        text-align: center;
+        br {
+            display: none;
+            @media (max-width: 769px) {
+                display: block;
+            }
+            
+        }
+        @media (max-width: 992px) and (min-width: 770px) {
+            font-size: 45px;
+            line-height: 53px;
+            margin-top: 56px;
+            margin-bottom: 76px;
+        }
+
+        @media (max-width: 769px) {
+            font-size: 38px;
+            line-height: 44px;
+            margin-top: 56px;
+            margin-bottom: 81px;
+        }
+       
+    }
+}

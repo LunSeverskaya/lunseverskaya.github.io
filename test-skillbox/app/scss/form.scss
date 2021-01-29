@@ -1,0 +1,133 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+
+.form {
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    &__input {
+        border: 2px solid #E6E8F0;
+        padding-left: 30px;
+        font-size: 15px;
+        line-height: 28px;
+        font-family: $os;
+        letter-spacing: -0.5px;
+        color: #657195;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+        @media (max-width: 992px) and (min-width: 770px) {
+            padding-left: 20px;
+            padding-top: 15px;
+            padding-bottom: 17px;
+            margin-bottom: 22px;
+        }
+        @media (max-width: 769px) {
+            padding-left: 28px;
+            margin-bottom: 20px;
+        }
+        &::placeholder {
+            font-size: 15px;
+            line-height: 28px;
+            font-family: $os;
+            color: #657195;
+        }
+    }
+    .reverse {
+        width: 100%;
+        @media (max-width: 992px)  {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+    &__button {
+        background-color: $blue;
+        font-family: $os;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        border: none;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        margin-bottom: 23px;
+        width: 100%;
+        @media (max-width: 992px)  {
+            margin-bottom: 0;
+        }
+    }
+
+    &__checkbox {
+        @media (max-width: 992px)  {
+            margin-bottom: 28px;
+        }
+        @media (max-width: 769px) {
+            margin-bottom: 46px;
+        }
+        input {
+            position: absolute;
+            z-index: -1;
+            opacity: 0;
+        }
+
+        input+label {
+            display: inline-flex;
+            align-items: center;
+            user-select: none;
+        }
+
+        input+label:before {
+            content: '';
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            background-color: $blue;
+            margin-right: 16px;
+            @media (max-width: 769px)  {
+                background-color: #fff;
+                border: 2px solid #E6E8F0;
+            }
+        }
+
+        input:checked+label::before {
+            background-image: url(../img/check.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            @media (max-width: 769px)  {
+                background-image: url(../img/check1.svg);
+            }
+
+        }
+
+        label {
+            font-family: $os;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 21px;
+            letter-spacing: -0.5px;
+            color: #657195;
+            position: relative;
+            a {
+                color: $blue;
+                display: block;
+                text-decoration: none;
+                position: absolute;
+                bottom: -17px;
+                left: 39px;
+                @media (max-width: 992px)  {
+                    position: static;
+                    margin-left: 3px;
+                }
+
+                @media (max-width: 769px)  {
+                    position: absolute;
+                }
+            }
+        }
+    }
+}

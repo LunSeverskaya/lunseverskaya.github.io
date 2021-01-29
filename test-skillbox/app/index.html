@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">
+                    Стоимость <br> обучения
+                </h1>
+            </div>
+        </header>
+        <div class="container">
+            <main class="main">
+                <div class="main__page main__page--blue">
+                    <div class="page">
+                        <div class="discount">
+                            <span class="discount__text">Скидка</span>
+                            <span class="discount__text discount__text--procent">40% </span>
+                            <span class="discount__text discount__text--criterion">первым 20</span>
+                        </div>
+                        <div class="price">
+                            <div class="old-price">
+                                <p class="old-price__description">
+                                    Полная стоимость курса
+                                </p>
+                                <div class="old-price__number">
+                                    50 000 Р
+                                </div>
+                            </div>
+                            <div class="credit-price">
+                                <div class="credit-price__number">
+                                    2 900 Р
+                                </div>
+                                <div class="credit-price__description">
+                                    Рассрочка без первого взноса
+                                </div>
+                            </div>
+                            <div class="offer-price">
+                                <div class="offer-price__number">
+                                    29 000 Р
+                                </div>
+                                <div class="offer-price__description">
+                                    Для первых 20-ти
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__page main__page--white">
+                    <div class="page">
+                        <div class="page__header">
+                            <h2>Запишитесь <br> на курс</h2>
+                        </div>
+                        <div class="page__benefit">
+                            <ul class="benefit-list">
+                                <li class="benefit-list__item">Телефон</li>
+                                <li class="benefit-list__item">Телефон</li>
+                                <li class="benefit-list__item">Телефон</li>
+                                <li class="benefit-list__item">Телефон</li>
+                            </ul>
+                        </div>
+                        <div class="page__description">
+                            <div class="course-info">
+                                <p class="course-info__text">Старт курса: </p>
+                                <p class="course-info__text course-info__text--blue">7 сентября</p>
+                            </div>
+                            <div class="course-info">
+                                <p class="course-info__text">Осталось: </p>
+                                <p class="course-info__text course-info__text--blue">19 мест</p>
+                            </div>
+                        </div>
+                        <div class="page__form">
+                            <form class="form" action="" method="">
+                                <input required type="text" name="name" placeholder="Имя" class="form__input">
+                                <input required type="tel" pattern="^\d{4}-\d{3}-\d{4}$" name="phone" placeholder="Телефон" id="phone" class="form__input">
+                                <input required type="text" name="email" placeholder="Email" id="email" class="form__input">
+                                <div class="reverse">
+                                    <button type="submit" class="form__button btn_n">Записаться</button>
+                                    <div class="form__checkbox">
+                                        <input type="checkbox" id="checkbox-id">
+                                        <label for="checkbox-id">Я согласен с условиями обработки 
+                                            <a href="#">персональных данных</a></label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+    </div>
+    <script>
+        let phone = document.getElementById('phone');
+        phone.oninvalid = function(event) {
+            event.target.setCustomValidity('Пожалуйста, введите номер телефона в формате 7999-999-9999');
+        }
+        let email = document.getElementById('email');
+        email.oninvalid = function(event) {
+            event.target.setCustomValidity('Пожалуйста, введите email в формате test@test.ru');
+        }
+    </script>
+</body>
+
+</html>

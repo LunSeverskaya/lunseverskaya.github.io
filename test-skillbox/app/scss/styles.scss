@@ -1,0 +1,51 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'header.scss';
+@import 'main.scss';
+@import 'discount.scss';
+@import 'price.scss';
+@import 'page.scss';
+@import 'benefit-list.scss';
+@import 'course-info.scss';
+@import 'form.scss';
+
+
+html * {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    min-height: 100%;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    @include auto;
+    @media (max-width: 1170px) {
+        max-width: 1170px;
+        width: 100%;
+    }
+    @media (max-width: 992px) {
+        max-width: 710px;
+        width: 100%;
+    }
+    @media (max-width: 769px) {
+        max-width: none;
+    }
+}
+
+body {
+    background: #F6F7FD;
+    margin: 0;
+}
